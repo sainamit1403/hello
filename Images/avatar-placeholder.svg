@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A"/>
+      <stop offset="50%" stop-color="#1E293B"/>
+      <stop offset="100%" stop-color="#0F172A"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="100%" stop-color="#2563EB"/>
+    </linearGradient>
+    <linearGradient id="amberGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FCD34D"/>
+      <stop offset="100%" stop-color="#F59E0B"/>
+    </linearGradient>
+    <pattern id="blueprintGrid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#38BDF8" stroke-width="0.5" stroke-opacity="0.12"/>
+    </pattern>
+  </defs>
+
+  <!-- Background with Blueprint Grid -->
+  <rect width="400" height="400" rx="32" fill="url(#bgGrad)"/>
+  <rect width="400" height="400" rx="32" fill="url(#blueprintGrid)"/>
+  
+  <!-- Outer Technical Circular HUD Ring -->
+  <circle cx="200" cy="180" r="130" fill="none" stroke="#38BDF8" stroke-width="1.5" stroke-opacity="0.25" stroke-dasharray="8 6"/>
+  <circle cx="200" cy="180" r="142" fill="none" stroke="#38BDF8" stroke-width="1" stroke-opacity="0.15"/>
+  <circle cx="200" cy="180" r="115" fill="#1E293B" fill-opacity="0.6"/>
+
+  <!-- Compass / Crosshair Marks -->
+  <path d="M 60 180 L 72 180 M 328 180 L 340 180 M 200 40 L 200 52 M 200 308 L 200 320" stroke="#38BDF8" stroke-width="2" stroke-linecap="round" stroke-opacity="0.5"/>
+
+  <!-- Student Silhouette -->
+  <!-- Head -->
+  <circle cx="200" cy="140" r="48" fill="#334155" stroke="url(#accentGrad)" stroke-width="3"/>
+  <!-- Hair / Modern Silhouette Cut -->
+  <path d="M 160 135 C 160 100, 180 85, 200 85 C 220 85, 240 100, 240 135 C 235 115, 215 105, 200 105 C 185 105, 165 115, 160 135 Z" fill="#475569"/>
+  <!-- Glasses / Technical Detail -->
+  <rect x="175" y="132" width="20" height="12" rx="4" fill="none" stroke="#38BDF8" stroke-width="2"/>
+  <rect x="205" y="132" width="20" height="12" rx="4" fill="none" stroke="#38BDF8" stroke-width="2"/>
+  <line x1="195" y1="138" x2="205" y2="138" stroke="#38BDF8" stroke-width="2"/>
+  
+  <!-- Torso / Shoulders with Technical Jacket/Collar -->
+  <path d="M 130 255 C 130 205, 165 195, 200 195 C 235 195, 270 205, 270 255 C 270 280, 250 295, 200 295 C 150 295, 130 280, 130 255 Z" fill="#334155" stroke="url(#accentGrad)" stroke-width="2.5"/>
+  <path d="M 185 195 L 200 230 L 215 195" fill="none" stroke="#38BDF8" stroke-width="2"/>
+
+  <!-- Bottom Badge: Shravan Kumar / Mechanical Engineering -->
+  <g transform="translate(200, 345)">
+    <rect x="-140" y="-22" width="280" height="44" rx="22" fill="#0F172A" stroke="url(#accentGrad)" stroke-width="1.5"/>
+    <circle cx="-110" cy="0" r="5" fill="#10B981"/>
+    <text x="-95" y="5" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="13" font-weight="700" fill="#F8FAFC" letter-spacing="0.5">SHRAVAN KUMAR</text>
+    <text x="50" y="5" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="600" fill="#38BDF8">| B.TECH ME</text>
+  </g>
+
+  <!-- Corner Engineering Calibration Brackets -->
+  <path d="M 24 40 L 24 24 L 40 24" fill="none" stroke="#38BDF8" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M 376 40 L 376 24 L 360 24" fill="none" stroke="#38BDF8" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M 24 360 L 24 376 L 40 376" fill="none" stroke="#38BDF8" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M 376 360 L 376 376 L 360 376" fill="none" stroke="#38BDF8" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- Subtle Mechanical Dimensioning Markings -->
+  <text x="32" y="55" font-family="'JetBrains Mono', monospace" font-size="10" fill="#64748B" letter-spacing="1">CAD.REF://ME-2028</text>
+  <text x="300" y="385" font-family="'JetBrains Mono', monospace" font-size="9" fill="#64748B">PROFILE_ID: 9.5_CGPA</text>
+</svg>
